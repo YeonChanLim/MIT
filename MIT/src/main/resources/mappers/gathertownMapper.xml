@@ -24,10 +24,11 @@
 		GROUP_NAME = #{groupName},
 		GROUP_CONTENT = #{groupContent},
 		GATHERTOWN_LINK = #{gathertownLink},
-		THUMBNAIL = #{thumbnail},
+		THUMBNAIL = null,
 		GROUP_NO = #{groupNo}
 		WHERE GATHERTOWN_NO = #{gathertownNo}
 	</update>
+	<!-- 이미지 업로드는 추후 추가 예정 -->
 	
 	<delete id="delete">
 		DELETE FROM GATHERTOWN

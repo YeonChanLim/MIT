@@ -18,6 +18,7 @@ public class HistoryServiceImpl implements HistoryService {
 
 	@Override
 	public void register(HistoryVO vo) throws Exception {
+		vo.setHistoryContent(vo.getHistoryContent().replace("\\r\\n", "<br>"));
 		dao.create(vo);
 	}
 

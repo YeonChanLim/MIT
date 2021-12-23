@@ -17,6 +17,8 @@ public class GathertownServiceImpl implements GathertownService {
 	
 	@Override
 	public void register(GathertownVO vo) throws Exception {
+		vo.setGroupContent(vo.getGroupContent().replace("\\r\\n", "<br>"));
+		
 		dao.create(vo);
 	}
 
@@ -27,6 +29,8 @@ public class GathertownServiceImpl implements GathertownService {
 
 	@Override
 	public void modify(GathertownVO vo) throws Exception {
+		vo.setGroupContent(vo.getGroupContent().replace("\\r\\n", "<br>"));
+		
 		dao.update(vo);
 	}
 

@@ -1,7 +1,6 @@
 package com.mit.domain;
 
 public class FreeCommentVO {
-	
 	private int commentNo;
 	private String commentText;
 	private String commentDate;
