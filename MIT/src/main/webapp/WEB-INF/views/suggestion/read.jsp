@@ -40,7 +40,7 @@
 						<div class="input-group">
 							<div class="input-group-text">작성자</div>
 							<c:if test="${0 eq suggestionVO.hiddenStatus}">
-								<input type="text" class="form-control" value="${freeVO.memberName}" readonly="readonly">
+								<input type="text" class="form-control" value="${suggestionVO.memberName}" readonly="readonly">
 							</c:if>
 							<c:if test="${1 eq suggestionVO.hiddenStatus}">
 								<input type="text" class="form-control" value="익명" readonly="readonly">
