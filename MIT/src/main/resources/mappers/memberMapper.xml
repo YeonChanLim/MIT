@@ -4,7 +4,7 @@
 <mapper namespace="com.mit.mapper.MemberMapper">
 
 	<select id="login" resultType="com.mit.domain.MemberVO">
-		SELECT MEMBER_NO, MEMBER_PW, MEMBER_NAME, MEMBER_PHONE, MEMBER_CLASS, TO_CHAR(ALLOW_DATE, 'YYYY-MM-DD HH24:MI:SS')
+		SELECT MEMBER_NO, MEMBER_PW, MEMBER_NAME, MEMBER_PHONE, MEMBER_CLASS, TO_CHAR(ALLOW_DATE, 'YYYY-MM-DD HH24:MI:SS') AS ALLOW_DATE
 		FROM MEMBER
 		WHERE MEMBER_NO = #{memberNo} AND MEMBER_PW = #{memberPw}
 	</select>
