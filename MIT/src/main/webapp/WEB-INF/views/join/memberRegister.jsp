@@ -27,7 +27,7 @@
 			<div class="col-lg-6 col-md-8 register-box">
 				<div class="col-lg-11 login-btm login-text"></div>
 				<div style="font-size: 25px; color: #343a40;">
-					<div onclick="returnMain()">
+					<div onclick="history.go(-1)">
 						<i class="bi bi-x-square-fill"></i>
 					</div>
 					<div class="col-lg-12 login-key" style="font-size: 60px; color: #343a40;">
